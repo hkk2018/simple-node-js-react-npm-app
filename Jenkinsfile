@@ -3,10 +3,10 @@ pipeline {
         label 'cpvm'
     }
     stages {
-        agent {
-            label 'cpvm'
-        }
         stage('Build') { 
+            agent {
+                label 'cpvm'
+            }
             steps {
                 sh 'npm install' 
             }
