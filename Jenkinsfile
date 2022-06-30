@@ -4,9 +4,6 @@ pipeline {
     }
     stages {
         stage('Build') { 
-            agent {
-                label 'cpvm'
-            }
             steps {
                 sh 'npm install' 
             }
